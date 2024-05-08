@@ -81,6 +81,6 @@ app.use((error, req, res, next) => {
     res.status(status).json({ message: message, data: data });
 });
 
-mongoose.connect('mongodb+srv://gvn:BnrWp6JUsksNPt70@cluster0.zv8zswi.mongodb.net/test').then(result => {
+mongoose.connect('mongodb+srv://gvn:BnrWp6JUsksNPt70@cluster0.zv8zswi.mongodb.net').then(result => {
     app.listen(8080);
 }).catch(err => console.log(err));
